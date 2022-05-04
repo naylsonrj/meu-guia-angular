@@ -6,7 +6,7 @@
       alt="Angular Logo"
       src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
     />
-    <h2>Guia Angular</h2>
+    <h2>Flogão</h2>
 
     <div class="menubar">
       <app-navbar></app-navbar>
@@ -16,130 +16,11 @@
 
 <div class="content" role="main">
   <!-- TUTORIAL RAPIDO -->
-  <h2>Guia Rápido</h2>
-  <p>Selecione a opção para visualização do comando</p>
-
-  <input type="hidden" #selection />
-
-  <div class="card-container">
-    <button
-      class="card card-small"
-      (click)="selection.value = 'component'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-      <span>New Component</span>
-    </button>
-
-    <button
-      class="card card-small"
-      (click)="selection.value = 'material'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-      <span>Angular Material</span>
-    </button>
-
-    <button
-      class="card card-small"
-      (click)="selection.value = 'pwa'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-      <span>Add PWA Support</span>
-    </button>
-
-    <button
-      class="card card-small"
-      (click)="selection.value = 'dependency'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-      <span>Add Dependencydsadsadsa</span>
-    </button>
-
-    <button
-      class="card card-small"
-      (click)="selection.value = 'test'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-      <span>Run and Watch Tests</span>
-    </button>
-
-    <button
-      class="card card-small"
-      (click)="selection.value = 'build'"
-      tabindex="0"
-    >
-      <svg
-        class="material-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-      >
-        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-      </svg>
-      <span>Build for Production</span>
-    </button>
+  <!--
+  <app-guia-rapido></app-guia-rapido> -->
+  <div class="bg-padrao">
+    <app-acesso></app-acesso>
   </div>
-
-  <!-- Terminal CodeSnaps -->
-  <div class="terminal" [ngSwitch]="selection.value">
-    <pre *ngSwitchDefault>ng generate component xyz</pre>
-    <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
-    <pre *ngSwitchCase="'pwa'">
-ng add @angular/pwa dsadsadsadsadsadsadsadsdsadsadas
-<p>hiueahiueaea</p>
-<p>teste</p>
-</pre
-    >
-    <pre *ngSwitchCase="'dependency'">ng add _____</pre>
-    <pre *ngSwitchCase="'test'">ng test</pre>
-    <pre *ngSwitchCase="'build'">ng build</pre>
-  </div>
-
   <!-- Footer -->
   <footer></footer>
 
