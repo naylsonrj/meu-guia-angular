@@ -23,6 +23,7 @@ import { CadastroComponent } from './acesso/cadastro/cadastro.component';
 import { LoginComponent } from './acesso/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AutenticacaoService } from './autenticacao.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { AutenticacaoService } from './autenticacao.service';
     MatNativeDateModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgbModule,
   ],
   providers: [AutenticacaoService],
   bootstrap: [AppComponent, MatMenuModule],
