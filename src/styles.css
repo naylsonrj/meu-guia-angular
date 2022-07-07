@@ -30,7 +30,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
    background-image: -webkit-gradient(linear, left top, left bottom, from(#9B30F9), to(#84e));
